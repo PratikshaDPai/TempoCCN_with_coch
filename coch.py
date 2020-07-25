@@ -15,7 +15,7 @@ def main(mode='rand_sound'):
     from pydub import AudioSegment
     # from argparse import argumentparser
   #AUDIO PROCESSING SECTION: MANIPULATES MP3 FILES AND CONVERTS TO WAV, SLICES $
-    DEMO_PATH = '/media/sf_acm_mirum_tempo' #join(dirname(realpath(__file__)), 'd$
+    DEMO_PATH = join(dirname(realpath(__file__)) #'/media/sf_acm_mirum_tempo' THE DATASET LINK MUST BE PUT HERE
     if mode == 'rand_sound':
         rfn=[]
         soundname=[]

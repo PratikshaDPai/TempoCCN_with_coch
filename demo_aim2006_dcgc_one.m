@@ -2,11 +2,6 @@
 % This scrips creates six figure windows, one for each stage of the AIM
 % processing model and plots four panes in each window, one for each file
 
-% (c) 2006-2008, University of Cambridge, Medical Research Council 
-% Tom Walters tcw24@cam.ac.uk
-% http://www.pdn.cam.ac.uk/cnbh/aim2006
-% $Date: 2008-06-10 18:00:16 +0100 (Tue, 10 Jun 2008) $
-% $Revision: 585 $
 
 filenames{1}='aa110p122s100t.wav';
 filenames{2}='aa256p122s100t.wav';

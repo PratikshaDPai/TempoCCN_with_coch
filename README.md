@@ -13,5 +13,8 @@ Cochleagram versus Mel Spectrogram
 Frequency is downsampled  into frequency bands with equivalent rectangular bandwidth (ERB) scale. Basically, the main difference between spectrogram and cochleogram is that cochleogram features are based on ERB scale that has finer resolution at low frequencies than the mel scale used in spectrogram.
 After we define the combination of the gammatone filterbank, we apply the filterbank into the ACM-Mirium dataset to generate a cochleogram which represents transformed audio input  in time and frequency domain. 
 
+ Description of different code sections:
+ 
+ demo_aim2006_dcgc_one.m : used to plot different cochleagream outputs for wav audio inputs. 
  
 

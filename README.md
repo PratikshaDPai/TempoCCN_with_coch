@@ -13,8 +13,18 @@ Cochleagram versus Mel Spectrogram
 Frequency is downsampled  into frequency bands with equivalent rectangular bandwidth (ERB) scale. Basically, the main difference between spectrogram and cochleogram is that cochleogram features are based on ERB scale that has finer resolution at low frequencies than the mel scale used in spectrogram.
 After we define the combination of the gammatone filterbank, we apply the filterbank into the ACM-Mirium dataset to generate a cochleogram which represents transformed audio input  in time and frequency domain. 
 
- Description of different code sections:
+ Description of different code sections: (All sections have een modified from their respective source repositories to fit in the main google colab notebook for nnet work)
  
  demo_aim2006_dcgc_one.m : used to plot different cochleagream outputs for wav audio inputs. 
+             I used this code section to adjust frequency parameters and cochleagram types
+ plot_nap.m: used to generate a neural activity pattern from an audio file, in turn used to produce a cochleagram
+ 
+ coch.py: used to preprocess audio files before passing to python cochleagram generator. Converts mp3 to WAV and trims length if necessary, uses pycochleagram library.
+ lyon.py: Python code from lyon repo, used to generate cochleagram from audio file for neural network. Uses Richard Lyon's auditory model ported from MATLAB to python
+ 
+ tempo-cnn : Neural network used to Predict tempo from audio file. Based on the paper:  Hendrik Schreiber ,Meinard Muller “A SINGLE-STEP APPROACH TO MUSICAL TEMPO ESTIMATION USING A CONVOLUTIONAL NEURAL NETWORK” in Proceedings of the 19th ISMIR Conference, Paris, France, September 23-27, 2018 
+ 
+All code compiled together with datasets in google colab notebook- Coch_classification
+
  
 
